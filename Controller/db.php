@@ -2,12 +2,10 @@
 $servername = "localhost";
 $username = "root";
 $password = "lavis2016";
-$dbname = "seusuperfacil"; // O nome do seu banco de dados
+$dbname = "seusuperfacil";
 
-// Criando a conexão com o banco de dados usando mysqli
-$conn = new mysqli($servername, $username, $password, $dbname);
+\$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificando a conexão
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
